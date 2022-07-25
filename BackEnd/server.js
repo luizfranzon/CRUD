@@ -21,12 +21,12 @@ app.get("/", (req, res) => {
 });
 
 //API GET USER------------------------------------------------------
-app.get("/user/:id", (req, res) => {
+app.get("/:id", (req, res) => {
     const userID = req.params.id;
     const user = users.find((user) => Number(user.id) === Number(userID));
 
     if (!user) {
-        return res.json("User nor found!");
+        return res.json("User not found!");
     }
 
     res.json(user)
