@@ -60,12 +60,10 @@ app.put("")
 app.delete("/:id", (req, res) => {
     const userIDParam = req.params.id
 
-    users = users.filter(user => {
-        user.id !== userIDParam
-    })
+    users = users.filter(user => Number(user.id) !== Number(userIDParam))
 
     res.json(`User successfully deleted`)
-});1
+});
 
 app.listen(port, () => {
     console.log("------------------=------------------");
