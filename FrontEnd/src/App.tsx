@@ -1,5 +1,17 @@
-export function App() {
-    return <h1></h1>;
-}
+import { Header } from './components/Header'
+import { InputPanel } from './components/InputPanel'
+import { UsersPanel } from './components/UsersPanel'
 
-export default App;
+import styles from "./styles/App.module.css"
+
+export function App() {
+    return (
+        <>
+            <Header />
+            <main className={styles.main}>
+                <InputPanel />
+                <UsersPanel />
+            </main>
+        </>
+    )
+}
