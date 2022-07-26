@@ -54,15 +54,19 @@ app.post("/", (req, res) => {
 });
 
 //API PUT-----------------------------------------------------------
-app.put("")
+app.put("/:id", (req, res) => {
+    const userID = req.params.id;
+
+
+})
 
 //API DELETE--------------------------------------------------------
 app.delete("/:id", (req, res) => {
     const userIDParam = req.params.id
 
     users = users.filter(user => Number(user.id) !== Number(userIDParam))
-
     res.json(`User successfully deleted`)
+    
 });
 
 app.listen(port, () => {
