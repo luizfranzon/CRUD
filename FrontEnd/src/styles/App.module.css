@@ -1,0 +1,17 @@
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    gap: 6.875rem;
+}
+
+@media (max-width: 1108px) {
+    .main {
+        margin-top: 3rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 4rem;
+    }
+}
