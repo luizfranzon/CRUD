@@ -1,0 +1,24 @@
+.panel {
+    background-color: #202024;
+    width: 600px;
+    height: 650px;
+    padding: 1rem;
+
+    border-radius: 16px;
+
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1390px) {
+    .panel {
+        width: 450px;
+        height: 487px;
+    }
+}
+@media (max-width: 1108px) {
+    .panel {
+        width: 85%;
+        height: 680px;
+    }
+}
