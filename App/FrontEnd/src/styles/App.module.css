@@ -2,8 +2,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 90vh;
     gap: 6.875rem;
+    height: 100vh;
 }
 
 @media (max-width: 1108px) {
