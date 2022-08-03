@@ -10,7 +10,7 @@
 <h3 align="center">CRUD PANEL</h3>
 
   <p align="center">
-    FullStack CRUD Application to apply knowledge
+    FullStack CRUD Application
 
 </div>
 <br />
